@@ -29,7 +29,7 @@ class GpsHelper():
 
 
         #configure GPS
-        if platform == "android" or platform=="ios":
+        if platform == "android" or platform == "ios":
             from plyer import gps
             gps.configure(on_location=self.update_blinker_position,
                           on_status=self.on_auth_status)

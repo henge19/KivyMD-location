@@ -1,4 +1,4 @@
-from kivy.garden.mapview import MapMarker
+from kivy_garden.mapview import MapMarker
 from kivy.animation import Animation
 
 class GpsBlinker(MapMarker):
