@@ -3,6 +3,7 @@ from kivy.app import App
 from kivy.utils import platform
 from kivymd.uix.dialog import MDDialog
 
+
 class GpsHelper():
     has_centered_map=False
     def run(self):
@@ -15,7 +16,7 @@ class GpsHelper():
 
         #Request permission on Android
         if platform == "android":
-            from android.permission import Permission,requests_permissions
+            from android.permissions import Permission,requests_permissions
             def callback(permission,results):
                 if all([res for res in results]):
                     print("Got all permissions")
