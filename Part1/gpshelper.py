@@ -29,7 +29,7 @@ class GpsHelper():
                     print("Did not get all permissions")
 
             #we put these two parameter inside of buildozer.spec file
-            requests_permissions([Permission.ACCESS_COARSE_LOCATION,
+            request_permissions([Permission.ACCESS_COARSE_LOCATION,
                                   Permission.ACCESS_FINE_LOCATION],callback)
 
 
