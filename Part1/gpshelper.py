@@ -16,7 +16,7 @@ class GpsHelper():
 
         #Request permission on Android
         if platform == "android":
-            from android.permissions import Permission,requests_permissions
+            from android.permissions import Permission,request_permissions
             def callback(permission,results):
                 if all([res for res in results]):
                     print("Got all permissions")
