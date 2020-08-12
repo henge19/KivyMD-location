@@ -9,5 +9,4 @@ class MainApp(MDApp):
         GpsHelper().run()
 
 
-
 MainApp().run()
